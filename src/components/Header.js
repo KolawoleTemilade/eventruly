@@ -1,30 +1,36 @@
-import React from 'react'
-import notocrown from "../assets/images/notocrown.jpg"
+import React from "react";
+import notocrown from "../assets/images/notocrown.jpg";
 
 const Header = () => {
+
   return (
-    <div className='w-full px-20' >
-        <div className='flex justify-between '>
-        <div className='logo flex '>
-          <img src={notocrown}/>
-            <h2 className='font-sans text-[30px] capitalize  '>eventruly</h2>
+    <div
+      className=" fixed max-w-[1300px] w-full z-50 bg-secondary  top-0 "
+    >
+      <div className="flex justify-between items-center gap-10  mx-20 py-4">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <img src={notocrown} alt="Logo" className="h-10" />
+          <h2 className="font-sans text-[30px] capitalize text-black">eventruly</h2>
         </div>
-        <nav className=' w-[458px]'>
-            <ul className='flex font-garamond capitalize space-x-10 px-9 py-2 bg-white border rounded-full '>
-                <li>about us</li>
-                <li>events</li>
-                <li>portfolio</li>
-                <li>contact us</li>
-            </ul>
+
+        {/* Navigation */}
+        <nav className="w-auto">
+          <ul className="flex font-garamond capitalize space-x-8 px-6 py-2 bg-white border border-gray-300 rounded-full">
+            <li className="cursor-pointer hover:text-secondary transition">about us</li>
+            <li className="cursor-pointer hover:text-secondary transition">events</li>
+            <li className="cursor-pointer hover:text-secondary transition">portfolio</li>
+            <li className="cursor-pointer hover:text-secondary transition">contact us</li>
+          </ul>
         </nav>
-        <div className='border rounded-md'>
-           <p className='capitalize bg-white'>nigeria</p>
-        </div>
 
+        {/* Country Selector */}
+        <div className="border border-gray-300 rounded-md px-4 py-2 bg-white text-black">
+          <p className="capitalize">nigeria</p>
         </div>
-      
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
