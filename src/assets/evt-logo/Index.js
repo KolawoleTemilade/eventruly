@@ -1,0 +1,6 @@
+export { default as evt} from "../evt-logo/evt.png"
+export { default as evt1} from "../evt-logo/evt1.png"
+export { default as evts} from "../evt-logo/evts.png"
+export { default as evtlogo} from "../evt-logo/evtlogo.png"
+export { default as logoevt} from "../evt-logo/logoevt.png"
+export { default as peoplelogo} from "../evt-logo/peoplelogo.png"
