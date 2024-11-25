@@ -80,7 +80,7 @@ const OurServices = () => {
         ],
     };
     return (
-        <div className='flex flex-col items-center justify-center pt-10'>
+        <div className='flex flex-col items-center justify-center pt-10 '>
             <div className=' w-[670px]  flex flex-col items-center justify-center'>
                 <div className='w-[470px] text-center'>
                     <p className="font-freehand text-foundation mt-10 capitalize"> our services</p>
@@ -90,7 +90,7 @@ const OurServices = () => {
             </div>
 
             {/* images carousel */}
-            <div className="w-[90%] max-w-[1200px] py-14  relative ">
+            <div className="w-[90%] max-w-[1200px] py-14  relative  ">
             <Slider ref={sliderRef} {...settings}>
                     {servicedata.map((service) => (
                         <div key={service.id} >
@@ -117,9 +117,9 @@ const OurServices = () => {
             </div>
 
             {/* sponsorship */}
-            <div className='w-[96%] max-w-[1200px] flex flex-col items-center justify-center'>
+            <div className='w-[96%] max-w-[1200px] flex flex-col items-center justify-center py-10 '>
             <p className="font-freehand text-foundation mt-10 capitalize"> proudly sponsored by</p>
-            <div className='flex justify-between items-center w-full py-7'>
+            <div className='flex justify-between items-center w-full py-7 '>
                 {sponsorship.map((sponsor, i) => (
                     <div key={i} className='  '> 
                         <img src={sponsor.image} className=' w-[90%]  px-4'/>
