@@ -45,6 +45,7 @@ const MemoriesCaptured = () => {
         speed: 500,
         slidesToShow: 4, // Number of buttons visible at a time
         slidesToScroll: 1, // Number of buttons scrolled at a time
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768, // For tablets and below
@@ -68,7 +69,7 @@ const MemoriesCaptured = () => {
                     <p className='font-garamond  leading-tight  text-[46.5px]'>moments <span className='font-garamond italic font-extralight'> crafted,</span> memories  <span className='font-garamond italic  font-normal'>captured </span></p>
                 </div>
                 <p className='text-white text-center text-sm font-garamond py-3' >
-                    Explore our portfolio to experience the artistry and attention to detail that goes into every Eventruly occasion. From elegant weddings to lively private parties and sophisticated corporate events, our gallery showcases the unique moments we’ve created for our clients.
+                    Explore our portfolio to experience the artistry and attention to detail that goes into every Eventruly occasion. From elegant weddings to lively private parties and sophisticated corporate events, our gallery showcases the unique moments we've created for our clients.
                 </p>
             </div>
             <div></div>

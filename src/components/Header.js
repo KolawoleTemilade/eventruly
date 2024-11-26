@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
     <div
-      className=" fixed max-w-[1300px] w-full z-50 bg-secondary  top-0 "
+      className=" fixed max-w-[1360px] w-full z-50 bg-secondary  top-0 "
     >
       <div className="flex justify-between items-center gap-10  mx-20 py-4">
         {/* Logo */}
