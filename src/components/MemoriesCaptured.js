@@ -72,7 +72,7 @@ const MemoriesCaptured = () => {
                     Explore our portfolio to experience the artistry and attention to detail that goes into every Eventruly occasion. From elegant weddings to lively private parties and sophisticated corporate events, our gallery showcases the unique moments we've created for our clients.
                 </p>
             </div>
-            <div></div>
+            
             <div className='border border-yellow max-w-[675px] w-full flex justify-between items-center py-5 px-4 rounded-lg mb-4'>
                 {momentsdata.map((moment, index) => {
                     const isActive = activeIndex === index;

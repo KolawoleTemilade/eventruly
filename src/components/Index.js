@@ -5,4 +5,6 @@ export {default as CraftsMoments  } from "../components/CraftsMoments";
 export {default as OurServices } from "../components/OurServices";
 export {default as MemoriesCaptured } from "../components/MemoriesCaptured";
 export {default as Testimonials } from "../components/Testimonials";
+export {default as ContactUs } from "../components/ContactUs";
+export {default as Newsletter } from "../components/Newsletter";
 

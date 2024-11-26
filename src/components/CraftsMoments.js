@@ -21,8 +21,8 @@ const CraftsMoments = () => {
                         </div>
                     </div>
                     {/* button div */}
-                    <div className='w-[120px] '>
-                        <Buttoon >
+                    <div className='w-[120px]  '>
+                        <Buttoon className= "border" >
                             our story
                         </Buttoon>
                     </div>

@@ -15,7 +15,7 @@ const Hero = () => {
                         <div className="flex  justify-between">
                             <p className="font-garamond text-[59.17px] w-[700px] font-semibold">Expertly planned,<span className="italic font-garamond text-foundation font-extralight"> beautifully </span>delivered.</p>
                             <div>
-                                <Buttoon className="bg-yellow capitalize font-bold py-2 px-4 my-12 leading-tight rounded-md">book consultation</Buttoon>
+                                <Buttoon>book consultation</Buttoon>
                             </div>
                         </div>
 

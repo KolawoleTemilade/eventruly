@@ -17,6 +17,7 @@ module.exports = {
         secondary: "var(--theme-secondary)",
         yellow: "var(--theme-yellow)",
         brown:"var(--theme-brown)",
+        ash: "var(--theme-ash)",
       }
     },
   },

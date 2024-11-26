@@ -32,6 +32,7 @@ const Testimonials = () => {
         speed: 500,
         slidesToShow: 1, // Number of buttons visible at a time
         slidesToScroll: 1, // Number of buttons scrolled at a time
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768, // For tablets and below
