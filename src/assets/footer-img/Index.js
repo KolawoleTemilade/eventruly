@@ -1,0 +1,6 @@
+export { default as facebook } from "../footer-img/facebook.png"
+export { default as twitter } from "../footer-img/twitter.png"
+export { default as instagram } from "../footer-img/instagram.png"
+export { default as location } from "../footer-img/location.png"
+export { default as mail } from "../footer-img/mail.png"
+export { default as call } from "../footer-img/call.png"

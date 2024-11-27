@@ -2,9 +2,9 @@ import React from 'react'
 
 const Newsletter = () => {
     return (
-        <div className='bg-white flex flex-col items-center justify-center'>
+        <div className='bg-white flex flex-col items-center justify-center py-16'>
             <div className='py-8 max-w-[734px] w-full text-center'>
-                <p className="font-freehand text-foundation mt-10 capitalize"> Newsletter</p>
+                <p className="font-freehand text-foundation  capitalize"> Newsletter</p>
                 <p className='font-bold font-garamond text-[46.67px]'>Sign Up for <span className='font-normal italic text-foundation'>Tips, Trends,</span> and Exclusive <span className='font-normal text-foundation italic'>Updates</span></p>
             </div>
             <div className='max-w-[593px] w-full border-2 flex justify-between py-2 px-2 bg-ash rounded-[12px]'>

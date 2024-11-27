@@ -7,4 +7,5 @@ export {default as MemoriesCaptured } from "../components/MemoriesCaptured";
 export {default as Testimonials } from "../components/Testimonials";
 export {default as ContactUs } from "../components/ContactUs";
 export {default as Newsletter } from "../components/Newsletter";
+export {default as Footer } from "../components/Footer";
 

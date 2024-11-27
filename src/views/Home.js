@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Metrics, CraftsMoments, MemoriesCaptured, Testimonials, ContactUs, Newsletter} from "../components/Index"
+import { Hero, Metrics, CraftsMoments, MemoriesCaptured, Testimonials, ContactUs, Newsletter, Footer} from "../components/Index"
 
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
        <Testimonials/>
        <ContactUs/>
        <Newsletter/>
+       <Footer/>
        </div>
     </div>
   )
