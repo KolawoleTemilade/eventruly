@@ -9,23 +9,23 @@ import Buttoon from "../components/ui/Buttoon"
 export const momentsdata = [
     {
         name: "weddings",
-        image: frame1
+        image: [frame1, frame2, frame3, frame4, frame2]
     },
     {
         name: "conferences",
-        image: frame2,
+        image: [frame2, frame3, frame4, frame2, frame1,]
     },
     {
         name: "hangouts",
-        image: frame3
+        image: [frame3, frame1, frame2, frame4, frame2]
     },
     {
         name: "ceremonies",
-        image: frame4
+        image: [frame4, frame1, frame2, frame3, frame2]
     },
     {
         name: "dinner dates",
-        image: frame2,
+        image: [frame2, frame3, frame1, frame4, frame2]
 
 
     },
@@ -33,9 +33,12 @@ export const momentsdata = [
 ]
 
 const MemoriesCaptured = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState (0)
+    const [activeImages, setActiveImages] = useState(momentsdata[0].image);
+
     const handleActiveState = (index) => {
         setActiveIndex(index)
+        setActiveImages(momentsdata[0].image)
     }
     const sliderRef = useRef(null)
 
@@ -62,8 +65,8 @@ const MemoriesCaptured = () => {
         ],
     };
     return (
-        <div className='bg-foundation max-w-[1500px] w-full flex-col flex items-center justify-center'>
-            <div className='py-10 max-w-[1500px] w-[835px] '>
+        <div className='bg-foundation max-w-[1200px]  flex-col flex items-center justify-center mx-auto'>
+            <div className='py-10  w-[835px] '>
                 <div className='text-white capitalize flex flex-col items-center justify-center'>
                     <p className="font-freehand  mt-10 capitalize"> See the Events We've Brought to Life</p>
                     <p className='font-garamond  leading-tight  text-[46.5px]'>moments <span className='font-garamond italic font-extralight'> crafted,</span> memories  <span className='font-garamond italic  font-normal'>captured </span></p>
@@ -72,13 +75,12 @@ const MemoriesCaptured = () => {
                     Explore our portfolio to experience the artistry and attention to detail that goes into every Eventruly occasion. From elegant weddings to lively private parties and sophisticated corporate events, our gallery showcases the unique moments we've created for our clients.
                 </p>
             </div>
-            
+
             <div className='border border-yellow max-w-[675px] w-full flex justify-between items-center py-5 px-4 rounded-lg mb-4'>
                 {momentsdata.map((moment, index) => {
-                    const isActive = activeIndex === index;
                     return (
                         <div key={index} >
-                            <div className={`border cursor-pointer border-yellow px-3 py-2 capitalize rounded-md hover:bg-yellow hover:text-black ${isActive ? 'bg-yellow text-black' : 'bg-transparent text-white'}`} onClick={() => handleActiveState(index)}>
+                            <div className=" border cursor-pointer border-yellow px-3 py-2 capitalize rounded-md hover:bg-yellow hover:text-black" onClick={() => handleActiveState(moment.image)}>
                                 <p className=''>{moment.name}</p>
                             </div>
                         </div>
@@ -89,10 +91,10 @@ const MemoriesCaptured = () => {
             <div className="w-[90%] max-w-[1200px] py-14 relative">
                 {/* Carousel Slider */}
                 <Slider ref={sliderRef} {...settings}>
-                    {momentsdata.map((moment, index) => (
+                    {activeImages.map((images, index) => (
                         <div key={index}>
                             <img
-                                src={moment.image}
+                                src={images}
                                 alt={`moments captured image ${index}`}
                                 className="w-full px-8"
                             />

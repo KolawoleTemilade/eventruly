@@ -4,7 +4,8 @@ import Buttoon from './ui/Buttoon';
 
 const ContactUs = () => {
     return (
-        <div style={{ backgroundImage: `url(${ctobg})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", backgroundPosition: "center", width:"100%"}} className='flex items-center py-16'>
+        <section className='flex max-w-[1200px]  items-center justify-center mx-auto'>
+        <div style={{ backgroundImage: `url(${ctobg})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", backgroundPosition: "center", width:"100%"}} className='flex items-center  mx-auto py-16'>
             <div className='bg-secondary max-w-[565px] w-full border rounded-md ml-32 px-7 '>
                 <div className=''>
                     <p className="font-freehand text-foundation mt-7 capitalize"> contact us</p>
@@ -17,6 +18,7 @@ const ContactUs = () => {
             </div>
 
         </div>
+        </section>
     )
 }
 

@@ -4,7 +4,7 @@ import { Hero, Metrics, CraftsMoments, MemoriesCaptured, Testimonials, ContactUs
 
 const Home = () => {
   return (
-    <div className=' mx-20 '>
+    <div className=' w-full h-[745px]  '>
         <div className=''>
        <Hero/>
        <Metrics/>

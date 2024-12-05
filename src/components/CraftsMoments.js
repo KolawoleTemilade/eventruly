@@ -5,9 +5,10 @@ import OurServices from './OurServices'
 
 const CraftsMoments = () => {
     return (
-        <div className=' bg-white'>
+        <div className='flex items-center justify-center flex-col '>
+            <div className=' max-w-[1200px] w-full  bg-white'>
             {/* craftsmoment */}
-            <div className='flex gap-20 items-center mx-20 pt-16'>
+            <div className='flex gap-20 items-center justify-center mx-20 pt-16'>
                 <div  >
                     <img src={videopic} className='max-w-[554px]  w-full h-[380px]' />
                 </div>
@@ -30,6 +31,7 @@ const CraftsMoments = () => {
                 </div>
             </div>
             <OurServices/>
+            </div>
 
         </div>
     )

@@ -5,11 +5,10 @@ import heroimg from "../assets/images/heroimg.png"
 
 const Hero = () => {
     return (
-        <div className=" bg-secondary ">
-            <div className="  py-5 ">
+        <div className="  flex flex-col items-center justify-center ">
                 <Header />
-
-                <div className=" py-16 space-y-10 mx-20 ">
+            <div className=" bg-secondary max-w-[1200px] w-full px-20 py-5 ">
+                <section className=" py-16 space-y-10 max-w-[1200px] w-full">
                     <div className="">
                         <p className="font-freehand text-foundation mt-10">Moments That Matter, Events to Remember</p>
                         <div className="flex  justify-between">
@@ -23,7 +22,7 @@ const Hero = () => {
                     <div className="w-full">
                         <img src={heroimg} className="w-full border rounded-3xl" />
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     )

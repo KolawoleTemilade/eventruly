@@ -49,40 +49,38 @@ const Testimonials = () => {
         ],
     };
     return (
-        <div className='flex max-w-[1500px] py-20  flex-col items-center justify-center bg-white'>
-            <div className='text-center max-w-[735px] w-full '>
+        <div className='flex max-w-[1200px] py-20 m-auto flex-col items-center justify-center bg-white'>
+            <section className='text-center max-w-[735px] w-full '>
                 <p className="font-freehand text-foundation mt-10 capitalize"> testimonials</p>
                 <p className='text-[46.67px] font-garamond font-bold '>Hear from Those Who <span className='italic text-foundation font-normal'>Trusted Us </span> to Make Their <span className='italic text-foundation font-normal '>Moments Extraordinary</span></p>
-            </div>
-            <div className='relative max-w-[1200px] w-full '>
-
-                <img src={left} className='absolute right-[10] top-[-10]' />
-
-                <div className='max-w-[1500px] w-full relative '>
+            </section>
+            <section className='relative max-w-[1200px] w-full  px-20'>
+             <img src={left} className='absolute right-[3] top-[-10]'/>
+                <div className='max-w-[1200px] w-full relative '>
                     <Slider ref={sliderRef} {...settings}>
                         {testimonialdata.map((testi, index) => (
-                            <div key={index} className=' flex items-center max-w-[1200px] w-full  mt-20 ml-20 '>
+                            <div key={index} className=' flex items-center max-w-[1200px] w-full  mt-20 '>
                                 <img src={testi.image} className='relative w-[450px] ' />
                                 <div className='max-w-[714px] w-full  absolute top-44  flex items-center ml-80'>
                                     <p className='max-w-[714px] text-center p-7 leading-tight rounded-lg  bg-secondary   text-black w-full font-bold font-garamond  '>
                                         {testi.text}
                                     </p>
-                                <div>  <img src={right} className='absolute right-[0] top-40' /></div>
+                                    <div>  <img src={right} className='absolute right-[0] top-40' /></div>
                                 </div>
-                                  
+
                             </div>
                         ))
                         }
 
                     </Slider>
                     <div className='w-1/2 flex items-center justify-center'>
-                        <div className="absolute top--10 transform -translate-y-1/2 right-[600px] z-10">
+                        <div className="absolute top--10 transform -translate-y-1/2 right-[520px] z-10">
                             {/* right arrow */}
                             <button onClick={() => sliderRef.current.slickPrev()} className="bg-yellow border w-10 h-10 rounded-full flex items-center justify-center">
                                 <img src={rightarrow} />
                             </button>
                         </div>
-                        <div className="absolute top--28 transform -translate-y-1/2 left-[600px] z-10">
+                        <div className="absolute top--28 transform -translate-y-1/2 left-[520px] z-10">
                             {/* left arrow */}
                             <button onClick={() => sliderRef.current.slickNext()} className="bg-yellow border w-10 h-10 rounded-full flex items-center justify-center">
                                 <img src={leftarrow} />
@@ -94,7 +92,7 @@ const Testimonials = () => {
                 </div>
 
 
-            </div>
+            </section>
 
         </div>
     )

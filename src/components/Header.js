@@ -5,9 +5,9 @@ const Header = () => {
 
   return (
     <div
-      className=" fixed max-w-[1360px] w-full z-50 bg-secondary  top-0 "
+      className=" fixed max-w-[1200px] w-full  z-50 bg-secondary  top-0 "
     >
-      <div className="flex justify-between items-center gap-10  mx-20 py-4">
+      <div className="flex justify-between items-center px-20 py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={notocrown} alt="Logo" className="h-10" />
